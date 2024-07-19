@@ -1,0 +1,177 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body {
+background-color:#cb525c;
+margin-top:0px;
+padding:0px;
+}
+
+img {
+    border: 2px solid #a0765d;
+    height: 150px;
+}
+
+h1, h2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:0px;
+    margin-bottom: 15px;
+    color:#3D1A17;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+a {
+    font-size: 20px;
+    color:black;
+    text-decoration: dashed;
+}
+
+a:hover {
+    color:#cb525c;
+    text-decoration: underline;
+}
+
+ul, ol {
+    list-style-type: none;
+    color: rgb(121, 47, 124);
+    padding-left:10px;
+}
+
+li {
+    text-align: left;
+    margin-top: 0px;
+}
+
+#bagpuss{
+    font-size: 20px;
+    margin-left:160px;
+}
+
+p {
+    padding: 10px 20px 10px 20px;
+    /*background-color: blue;*/
+}
+
+footer p{
+    font-size: 25px;
+}
+
+.item1 { grid-area: header; 
+    background-color:#ECB0A9;
+}
+.item2 { grid-area: menu; 
+    background-color: #ebcbaa;
+}
+.item3 { grid-area: main; 
+    background-color: #ede6de;
+}
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'footer footer footer footer footer footer';
+  gap: 5px;
+  /*background-color: #2196F3;*/
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+  footer {
+    clear:both;
+    display: inline;
+  }
+
+  footer p{
+    font-size:20px;
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p{
+        font-size: 22px
+    }
+
+    ul, ol {
+        list-style-type: none;
+        padding-left:0px;
+    }
+    
+    li {
+        text-align: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header header header header header'
+          'menu menu menu menu menu menu'
+          'main main main main main main'
+          'footer footer footer footer footer footer';
+      }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 25px
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header header header header header'
+          'menu menu menu main main main'
+          'footer footer footer footer footer footer';
+      }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header header header header header'
+          'menu menu main main main main'
+          'footer footer footer footer footer footer';
+      }
+}
+
+  
